@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.MedicinaTrabalho" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+   <item name="colorPrimary">@color/verdeEscuro</item>
+        <item name="colorPrimaryDark">@color/verdeEscuro</item>
+        <item name="colorSecondary">@color/verdeClaro</item>
+        <item name="colorAccent">#B88945</item>
+    </style>
+
+    <style name="Theme.MedicinaTrabalho" parent="Base.Theme.MedicinaTrabalho" />
+
+    <style name="toolbar" parent="Theme.AppCompat.NoActionBar"/>
+
+
+
+
+
+
+    <style name="SelectionColor">
+        <item name="colorControlActivated">@color/verdeEscuro</item>
+        <item name="android:textColorHighlight">@color/verdeEscuro</item>
+    </style>
+
+
+
+
+</resources>

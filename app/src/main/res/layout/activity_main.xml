@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical"
+    tools:context=".view.MainActivity"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <include
+                layout="@layout/toolbar_java"
+                android:layout_width="match_parent"
+                android:layout_height="61dp" />
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/editTextNomeEntrega"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/back_campo_data"
+            android:drawableEnd="@drawable/baseline_search_24"
+            android:ems="10"
+            android:hint="Selecione o funcionário"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingEnd="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/editDataEntrega"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back_campo_data"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Data entrega"
+            android:inputType="number"
+            android:paddingLeft="7dp"
+
+            android:textColorHint="#979191"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listFuncionarioExames"
+            app:mask="##/##/####" />
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/editDataRetornoExame"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/back_campo_data"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Data Retorno"
+            android:inputType="number"
+            android:paddingLeft="7dp"
+            android:textColorHint="#979191"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxApto"
+            app:mask="##/##/####" />
+
+        <CheckBox
+            android:id="@+id/checkBoxAdmissional"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Exame admissional"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDataEntrega" />
+
+
+        <CheckBox
+            android:id="@+id/checkBoxRetorno"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Exame retorno trabalho"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxPeriodico" />
+
+        <CheckBox
+            android:id="@+id/checkBoxMudança"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Exame mudança de função"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxDemissional" />
+
+        <CheckBox
+            android:id="@+id/checkBoxDemissional"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Exame demissional"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxRetorno" />
+
+        <CheckBox
+            android:id="@+id/checkBoxPeriodico"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:text="Exame periódico"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxAdmissional" />
+
+        <CheckBox
+            android:id="@+id/checkBoxApto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="Apto"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMudança" />
+
+        <CheckBox
+            android:id="@+id/checkBoxInapto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            android:text="Inapto"
+            app:layout_constraintStart_toEndOf="@+id/checkBoxApto"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxMudança" />
+
+        <ListView
+            android:id="@+id/listFuncionarioExames"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextNomeEntrega" />
+
+
+        <Button
+            android:id="@+id/buttonSalvarExame"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/verdeClaro"
+            android:onClick="salvarEntregaExames"
+            android:text="Salvar"
+            android:theme="@style/SelectionColor"
+            app:layout_constraintEnd_toStartOf="@+id/buttonAtualizarExame"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editDataRetornoExame" />
+
+        <Button
+            android:id="@+id/buttonAtualizarExame"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/editar"
+            android:onClick="atualizarEntregaExame"
+            android:text="Editar"
+            app:layout_constraintEnd_toStartOf="@+id/buttonExcluirExame"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonSalvarExame"
+            app:layout_constraintTop_toBottomOf="@+id/editDataRetornoExame" />
+
+        <Button
+            android:id="@+id/buttonLimparExame"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="@color/novo"
+            android:onClick="limparCamposBotaoNovo"
+            android:text="Novo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonExcluirExame"
+            app:layout_constraintTop_toBottomOf="@+id/editDataRetornoExame" />
+
+        <Button
+            android:id="@+id/buttonExcluirExame"
+            android:layout_width="wrap_content"
+            android:layout_height="65dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/excluir"
+            android:onClick="deletar"
+            android:text="Excluir"
+            app:layout_constraintEnd_toStartOf="@+id/buttonLimparExame"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/buttonAtualizarExame"
+            app:layout_constraintTop_toBottomOf="@+id/editDataRetornoExame" />
+
+        <LinearLayout
+            android:id="@+id/Linearlistagem"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/back_linear"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/buttonLimparExame">
+
+
+            <EditText
+                android:id="@+id/editNomePesquisarExame"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="24dp"
+                android:background="@drawable/back_campo_data"
+                android:drawableEnd="@drawable/baseline_search_24"
+                android:ems="10"
+                android:hint="Pesquisar"
+                android:inputType="textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingEnd="10dp"
+                android:textColorLink="@color/white" />
+
+            <ListView
+                android:id="@+id/listTotalExames"
+                android:layout_width="match_parent"
+                android:layout_height="381dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="24dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/back_campo_item_recycler"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:onClick="voltarMain"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout"
+            app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

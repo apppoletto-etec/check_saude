@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="verdeEscuro">#356438</color>
+    <color name="verdeClaro">#667555</color>
+    <color name="amarelo">#EAAD54</color>
+
+    <color name="editar">#3F51B5</color>
+    <color name="excluir">#8F140B</color>
+    <color name="novo">#FF5722</color>
+    <color name="vermelho">#DD4034</color>
+
+</resources>

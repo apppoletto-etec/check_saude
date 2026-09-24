@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/relatorio"
+        android:title="Relatório de entrega de exames"/>
+
+    <item android:id="@+id/cadastroFunc"
+        android:title="Cadastro de Funcionários"/>
+
+    <item android:id="@+id/cadastroEpi"
+        android:title="Cadastro de Epi"/>
+
+    <item android:id="@+id/sair"
+        android:title="Sair"/>
+
+</menu>

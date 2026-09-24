@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "947639677310",
+    "project_id": "medicinatrabalho-10b32",
+    "storage_bucket": "medicinatrabalho-10b32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:947639677310:android:1644b85831b6566991032f",
+        "android_client_info": {
+          "package_name": "com.lima.medicinatrabalho"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8Hl20Y8EH6B_wxtR_VJo1ln0XqdwVM4I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
