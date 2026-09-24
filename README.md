@@ -13,6 +13,8 @@
 
 O **Check Saúde** é um aplicativo Android de apoio à medicina do trabalho. Ele organiza funcionários e registros de exames ocupacionais, facilitando a consulta das informações necessárias para o acompanhamento da saúde nas empresas.
 
+Este aplicativo integra a **SST Digital: Tecnologia a Serviço da Segurança**, um ecossistema acadêmico que demonstra como soluções digitais podem organizar exames ocupacionais, apoiar o acompanhamento de prazos e reduzir processos manuais. O projeto tem finalidade educacional e demonstrativa.
+
 ## Funcionalidades
 
 - Autenticação e cadastro de usuários;
@@ -59,4 +61,4 @@ Simplificar o controle de exames ocupacionais e tornar as informações de saúd
 
 ---
 
-<div align="center">Desenvolvido como parte do ecossistema de segurança do trabalho <strong>Poletto ETEC</strong>.</div>
+<div align="center">Parte do ecossistema <strong>SST Digital: Tecnologia a Serviço da Segurança</strong>.</div>
